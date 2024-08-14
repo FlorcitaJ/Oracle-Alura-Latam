@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador de Texto</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container_contenido">
+                <div class="container_informacion">
+                    <div class="logo">
+                        <img src="/img/logos.png"  alt="logo_oracle_alura">
+                    </div>
+                    <div class="texto_ingresado">
+                        <textarea id="texto_usuario" placeholder="Ingrese el texto aquí" min="1" max="1000" class="container__textarea"></textarea>
+                    </div>
+                    <div class="mensaje_advertencia">
+                        <img src="/img/advertencia.png" alt="signo_advertencia">
+                        <p>Solo minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <button onclick="encriptarTexto()" class="container_boton">Encriptar</button>
+                        <button onclick="desencriptarTexto()" class="container_boton" >Desencriptar</button>
+                    </div>
+                </div>
+                <div class="container_contenido_devuelto">
+                    <div class="texto_devuelto" id="caja_valores">
+                        <div id="imagen_inicial">
+                        </div>
+                        <div class="elementos_iniciales">
+                            <h1 id="elemento_h1"></h1>
+                            <h2></h2>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
